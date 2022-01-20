@@ -1,8 +1,8 @@
 import {createElement} from '../render';
 
-const generateFilmsListContainer = () => '<div class="films-list__container"></div>';
+const getFilmsEmptyTemplate = () => '<h2 class="films-list__title">There are no movies in our database</h2>';
 
-class FilmsContainer {
+class FilmsEmpty {
   #element = null;
 
   get element() {
@@ -14,7 +14,7 @@ class FilmsContainer {
   }
 
   get template() {
-    return generateFilmsListContainer();
+    return getFilmsEmptyTemplate();
   }
 
   removeElement() {
@@ -23,4 +23,4 @@ class FilmsContainer {
   }
 }
 
-export default FilmsContainer;
+export default FilmsEmpty;

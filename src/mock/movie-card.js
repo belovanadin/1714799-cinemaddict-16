@@ -1,5 +1,5 @@
 import { generateComment } from './comments.js';
-import { getRandomFloatInteger, getRandomInteger, createRandomArray, generateDate } from '../util.js';
+import { getRandomFloatInteger, getRandomInteger, createRandomArray, generateDate } from '../utils.js';
 
 const ACTORS = [
   'Al Pacino',
@@ -141,7 +141,10 @@ export const generateFilmCard = () => ({
   country: generateCountry(),
   date: generateDate(),
   duration:generateDuration(getRandomInteger(FilmLength.MIN, FilmLength.MAX)),
-  isWatchlist: Boolean(getRandomInteger(0, 1)),
-  isWatched: Boolean(getRandomInteger(0, 1)),
-  isFavorite: Boolean(getRandomInteger(0, 1))
+  userDetails: {
+    watchingDate: generateDate (),
+    isWatchlist: Boolean(getRandomInteger(0, 1)),
+    isWatched: Boolean(getRandomInteger(0, 1)),
+    isFavorite: Boolean(getRandomInteger(0, 1))
+  }
 });

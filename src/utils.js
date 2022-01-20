@@ -50,4 +50,4 @@ const getTimeFromMins = (mins) => {
   return `${hours}h ${minutes}m`;
 };
 
-export { getRandomInteger, getArraySentences, getRandomElementArray, getRandomText, getShuffleArray, getTimeFromMins/* formatDateComment */ };
+export { getRandomInteger, getArraySentences, getRandomElementArray, getRandomText, getShuffleArray, getTimeFromMins };

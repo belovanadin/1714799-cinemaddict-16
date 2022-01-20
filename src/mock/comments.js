@@ -1,4 +1,4 @@
-import {getRandomArrayElement, generateDate } from '../util.js';
+import {getRandomArrayElement, generateDate } from '../utils.js';
 
 const commentAuthors = [
   'John Snow',
